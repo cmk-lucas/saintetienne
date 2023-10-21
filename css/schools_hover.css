@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+
+/*Styling for cards*/
+
+/* body {
+  font-family: "Raleway", sans-serif;
+  background: #eee;
+} */
+.h1-hover {
+  color: #111;
+  text-align: center;
+  margin-top: 25px;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+
+.container-hover {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s all ease;
+  transform: rotateX(60deg) scale(0.7);
+   box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.container-hover:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: 0.5s all ease;
+  perspective: 900;
+  z-index: 99;
+}
+
+#card1 {
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 0;
+  left: -40%;
+}
+
+#card2 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 70%;
+  z-index: 0;
+}
+
+#card3 {
+  left: -150%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+#card4 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 180%;
+  z-index: 0;
+}
+
+#card5 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: -200%;
+  z-index: 0;
+}
+
+.image-hover {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  z-index: 30;
+}
+
+#story1{
+  background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
+}
+#story2 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+#story3 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+}
+#story4 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+#story5 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+
+.h3-hover {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+.p-hover {
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
